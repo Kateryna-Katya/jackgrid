@@ -86,3 +86,37 @@
         font-size: 24px;
     }
 }
+/* Disclaimer */
+.disclaimer-section{
+    background-image: url("/img/disclaimer/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.disclaimer-container{
+    padding-top: 160px;
+    padding-bottom: 44px;
+}
+.disclaimer-text{
+    font-family: "Red Hat Text", sans-serif;
+        font-size: 24px;
+        line-height: 1.33333;
+        text-align: justify;
+    font-weight: 500;
+        color: #fff;
+}
+.disclaimer-span{
+    color: #d6f278;
+    font-weight: 700;
+}
+@media only screen and (min-width: 1440px) {
+   .disclaimer-section{
+    background-image: url("/img/disclaimer/desk.png");
+   }
+   .disclaimer-container{
+    padding: 60px 80px 60px 259px;
+   }
+   .disclaimer-text{
+    font-size: 32px;
+   }
+}
