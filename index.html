@@ -2,55 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/jackgrid/favicon.svg" />
+    <link rel="icon" type="image/png" href="/jackgrid/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Pumpkin Master</title>
     <script type="module" crossorigin src="/jackgrid/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/jackgrid/assets/styles-X9THPhCB.css">
+    <link rel="stylesheet" crossorigin href="/jackgrid/assets/styles-e9TveCpw.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+    
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero-section" id="home">
+    <div class="container hero-container">
+        <h1 class="visually-hidden">Pumpkin Master</h1>
+        <div class="hero-wrapper">
+            <picture>
+                <source srcset="/jackgrid/assets/logo-desk-DmGQF6Lf.png 1x, /jackgrid/assets/logo-desk@2x-B8s7wXtx.png 2x" media="(min-width: 1439px)" />
+                <source srcset="/jackgrid/assets/logo-mob-B3bBbvlw.png 1x, /jackgrid/assets/logo-mob@2x-DB2B9sb0.png 2x" media="(max-width: 1438px)" />
+                <img class="hero-logo" src="/jackgrid/assets/logo-mob-B3bBbvlw.png" alt="Pumpkin Master" loading="lazy" />
+            </picture>
+            <div class="hero-text-wrapper">
+            <h2 class="hero-subtitle">It's basically a Halloween game where you click on pumpkins and see what happens.</h2>
+            <p class="home-text">Welcome to Pumpkin Master! It's this fun Halloween game I put together where you basically just click around and
+            discover stuff.<br/> Rows of mysterious pumpkins await, each ready to reveal something unexpected. It's got that fun
+            Halloween vibe without being too scary.</p>
+            <a class="hero-button" href="#demo">
+                <img class="hero-btn pulse" src="/jackgrid/assets/btn-BThUnwGz.png" alt="Enter" loading="lazy" />
+            </a></div>
+        </div>
+    </div>
+</section>
     </main>
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
-
+    
 
   </body>
 </html>
