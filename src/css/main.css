@@ -311,3 +311,44 @@ width: 221px;
     height: 24px;
 
 }
+@media only screen and (min-width: 1440px) {
+ .demo-section{
+    height: 738px;
+ }
+ .demo-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+ }
+ .game-wrapper{
+    width: 670px;
+        height: 376px;
+ }
+ .demo-title{
+    text-align: left;
+ }
+ .demo-text-wrapper{
+font-size: 24px;
+margin-top: 60px;
+ }
+ .demo-wrapper {
+     margin: 0 auto;
+    height: 538px;
+ }
+
+ .game-img {
+width: 531px;
+    height: 538px;
+ }
+ .demo-btn {
+     position: absolute;
+     z-index: 10;
+     display: inline-block;
+     cursor: pointer;
+     top: 70%;
+     left: 26%;
+     width: 221px;
+     height: 60px;
+     transform: translate(-50%, -50%);
+ }
+}
