@@ -44,4 +44,41 @@
             </div>
         </div>
     </article>
+    <article class="demo-section" id="demo">
+        <div class="container demo-container">
+            <h2 class="demo-title">The Game</h2>
+            <div class="demo-text-wrapper">
+                <p>At the center of Pumpkin Master is a field of interactive pumpkins.When you click a pumpkin, you get these cool little
+                animations and spooky sounds - nothing too scary though, just fun Halloween vibes.</p>
+                <p>Every now and then you'll hit a special pumpkin that triggers this mini bonus round - gets your heart racing a bit
+                before settling back into the regular rhythm.</p>
+            </div>
+            <div class="demo-wrapper">
+                <picture>
+                    <source srcset="
+                    /img/demo/demo-desk.png 1x,
+                    /img/demo/demo-desk@2x.png 2x
+                    " media="(min-width: 1440px)" />
+                    <source srcset="
+                    /img/demo/demo-mob.png 1x,
+                    /img/demo/demo-mob@2x.png 2x
+                    " media="(max-width: 1439px)" />
+                    <img class="game-img" src="/img/demo/demo-mob.png" alt="Forest Dreams" loading="lazy" />
+                </picture>
+    
+    
+                <div class="iframe-wrapper">
+                    <iframe id="gameIframe" name="gameIframe"></iframe>
+    
+                    <button id="closeIframeBtn" class="hidden-close-btn" aria-label="Close">
+                        <img class="close-img" src="/img/demo/close.png" alt="Close">
+                    </button>
+                </div>
+            </div>
+            <a class="demo-btn" href="#"
+                data-game-url="https://demo.evoplay.games/demo/instant/html5/evoplay/pumpkinmaster " target="gameIframe">
+                <img class="demo-img" src="/img/demo/btn.png" alt="Play Free" loading="lazy" />
+            </a>
+        </div>
+    </article>
 </section>

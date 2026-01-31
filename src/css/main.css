@@ -190,3 +190,124 @@ font-family: "Red Hat Text", sans-serif;
     font-size: 24px;
   }
 }
+/* Demo */
+.demo-section{
+    height: 915px;
+}
+.demo-container {
+    position: relative;
+    padding-top: 64px;
+}
+.demo-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+    font-family: "Red Hat Text", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.55556;
+        background: linear-gradient(180deg, #98ffef 0%, #109278 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.demo-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 24px auto 0;
+    height: 339px;
+}
+
+.game-img {
+width: 335px;
+    height: 339px;
+}
+
+/* ===== КНОПКА ===== */
+
+.demo-btn {
+    position: absolute;
+    z-index: 10;
+    display: inline-block;
+    cursor: pointer;
+    top: 84%;
+    left: 50%;
+width: 221px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+}
+
+.demo-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* ===== ФОН ===== */
+
+.game-img {
+    width: 100%;
+    display: block;
+}
+
+/* ===== IFRAME ===== */
+
+.iframe-wrapper {
+    position: absolute;
+    top: 9%;
+    left: 39%;
+    transform: translateX(-48%);
+    width: 68%;
+    height: 54%;
+    z-index: 20;
+
+    /* 🔥 ГОЛОВНЕ ВИПРАВЛЕННЯ */
+    pointer-events: none;
+}
+
+#gameIframe {
+    width: 128%;
+    height: 158%;
+    border: none;
+    display: none;
+    background: #000;
+    border-radius: 10px;
+}
+
+/* АКТИВНИЙ СТАН */
+.iframe-wrapper.active {
+    pointer-events: auto;
+}
+
+#gameIframe.active {
+    display: block;
+}
+
+/* ===== КНОПКА ЗАКРИТТЯ ===== */
+
+#closeIframeBtn {
+    position: absolute;
+    top: 20px;
+    right: -60px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    display: none;
+
+    z-index: 9999;
+    /* 🔥 НАД iframe */
+    pointer-events: auto;
+}
+
+#closeIframeBtn.active {
+    display: block;
+}
+
+.close-img {
+    width: 24px;
+    height: 24px;
+
+}
