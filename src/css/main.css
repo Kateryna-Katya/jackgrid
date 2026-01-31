@@ -120,3 +120,73 @@
     font-size: 32px;
    }
 }
+.big-section{
+    background-image: url("/img/bg/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+@media only screen and (min-width: 1440px) {
+    .big-section{
+     background-image: url("/img/bg/desk.png");
+    }
+}
+/* ABOUT GAME */
+.about-section{
+    background-image: url("/img/about/mob.png");
+    background-repeat: no-repeat;
+    background-position: bottom -240px center;
+    background-size: cover;
+    height: 1029px;
+}
+.about-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 40px;
+}
+.about-text{
+font-family: "Red Hat Text", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.55556;
+    color: #98ffef;
+}
+.about-text-two{
+font-family: "Red Hat Text", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.55556;
+    background: linear-gradient(180deg, #98ffef 0%, #109278 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media only screen and (min-width: 1440px) {
+  .about-section{
+    background-image: url("/img/about/desk.png");
+    height: 691px;
+    background-position: bottom -400px right;
+  }
+  .about-container{
+    padding-left: 144px;
+    padding-top: 100px;
+    padding-bottom: 119px;
+  }
+  .about-title{
+    margin-left: 0;
+    margin-right: auto;
+    text-align: left;
+  }
+  .about-text-wrapper{
+    width: 670px;
+    margin-top: 60px;
+  }
+  .about-text{
+    font-size: 24px;
+    line-height: 1.33333;
+  }
+  .about-text-two{
+    font-size: 24px;
+  }
+}
