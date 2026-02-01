@@ -5,14 +5,14 @@ body{
     line-height: 1.55556;
 }
 h2 {
-  font-family: "Orelega One", sans-serif;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1.2;
-  text-align: center;
-
-  background: linear-gradient(360deg, #ff841a 0%, #fffd38 100%);
-  background-clip: text;
+    font-family: "Orelega One", sans-serif;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 1.2;
+      text-transform: uppercase;
+      text-align: center;
+      background: linear-gradient(360deg, #ff841a 0%, #fffd38 100%);
+      background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #ff0000;
