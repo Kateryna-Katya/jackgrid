@@ -26,7 +26,7 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
 const similarSwiper = new Swiper('.similar-swiper', {
   slidesPerView: 1,
   spaceBetween: 24,
-  centeredSlides: true, // ⭐ ГОЛОВНЕ
+  centeredSlides: true, 
   loop: true,
 
   autoplay: {

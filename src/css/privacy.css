@@ -1,0 +1,87 @@
+@import url('./reset.css');
+@import url('./base.css');
+@import url('./container.css');
+@import url('./footer.css');
+@import url('./header.css');
+@import url('./cookie-popup.css');
+
+
+.background {
+    background-image: url("/img/back/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+font-family: "Red Hat Text", sans-serif;
+font-weight: 300;
+font-size: 18px;
+line-height: 1.55556;
+text-align: justify;
+color: #fff;
+}
+
+.privacy-title {
+font-family: "Sansita", sans-serif;
+font-weight: 800;
+font-size: 36px;
+line-height: 1.11111;
+text-align: center;
+text-transform: capitalize;
+background: linear-gradient(360deg, #ff841a 0%, #fffd38 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke: transparent;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.policy-subtitle {
+font-family: "Red Hat Text", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.55556;
+
+color: #fff;
+    text-transform: none;
+}
+
+.policy-list {
+    list-style-type: disc;
+    padding-left: 30px;
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.mail-link {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.policy-span {
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 1439px) {
+    .background {
+        background-image: url("/img/svg.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: contain;
+    }
+
+
+}

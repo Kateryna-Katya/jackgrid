@@ -41,10 +41,7 @@
     background-size: cover;
     background-position:top center;
 }
-.hero-container{
-    padding-bottom: 24px;
 
-}
 .hero-subtitle{
     font-size: 44px;
 }
@@ -480,11 +477,22 @@ padding-bottom: 100px;
 
 /* лівий */
 .swiper-slide-prev .slide-inner {
-    transform: scale(0.7) translateY(80px);
+    transform: scale(0.7) translateY(120px);
 }
 
 /* правий */
 .swiper-slide-next .slide-inner {
-    transform: scale(0.7) translateY(-80px);
+    transform: scale(0.7) translateY(-100px);
+}
+.slide-img {
+    width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: width 0.4s ease;
+}
+
+.swiper-slide-active .slide-img {
+    width: 100%;
 }
 }

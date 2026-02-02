@@ -1,44 +1,131 @@
 .header {
-  padding: 20px 0;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  width: 100%;
+  height: 75px;
+background: linear-gradient(180deg, #000614 0%, rgba(1, 115, 125, 0.5) 100%);
 }
-.nav {
+
+.header-container {
+  padding: 24px;
   display: flex;
   justify-content: space-between;
 }
-.nav-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.nav-list {
+
+
+.menu-button {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: center;
+  border: none;
+  border-radius: 121px;
+  width: 28px;
+  height: 28px;
+  margin-left: auto;
+  background-color: inherit;
 }
-.nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+
+.navigation-list {
+  display: none;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-}
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
+
+/* Modal */
+.modal {
+  display: none;
+ background-image: url("/img/header/mob.png");
+ background-repeat: no-repeat;
+ background-position: top center;
+ background-size: cover;
+  padding: 48px 32px;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+  position: fixed;
+  top: 99px;
   left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+  transform: translateX(-50%);
+  transition: visibility 0.3s ease;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  align-items: start;
+}
+
+
+.menu-list-item {
+font-family: "Orelega One", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(360deg, #ff841a 0%, #fffd38 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.menu-list-item:hover,
+.menu-list-item:focus,
+.menu-list-item.active {
+opacity: 1;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    height: 76px;
+    background-image: url("/img/header/desk.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .header-container {
+    padding: 20px 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .navigation-list {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+  }
+
+
+  .links {
+font-family: "Orelega One", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  text-align: center;
+  background: linear-gradient(360deg, #ff841a 0%, #fffd38 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.7;
+    transition: opacity 0.3s ease;
+  }
+
+  .links:hover,
+  .links:focus,
+  .links.active {
+  opacity: 1;
+  }
+
 }

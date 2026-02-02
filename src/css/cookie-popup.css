@@ -1,0 +1,101 @@
+.cookie-popup {
+    position: fixed;
+    bottom: 30px;
+    left: 48%;
+    transform: translateX(-48%);
+    padding: 21px;
+box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.18);
+    background: linear-gradient(360deg, #050811 0%, #109278 100%);
+    border-radius: 20px;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.cookie-class {
+font-family: "Red Hat Text", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #fff;
+    text-align: left;
+}
+
+.cookie-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+    width: 281px;
+    height: 38px;
+    margin-top: 38px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-accept {
+border-radius: 8px;
+    padding: 7px 15px;
+    width: 152px;
+    height: 34px;
+background: radial-gradient(67.02% 87.39% at 41.46% 10.2%, #d6f278 0%, #5ebe1d 100%);
+    box-sizing: border-box;
+    border: none;
+font-family: "Red Hat Text", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #050811;
+
+}
+
+.btn-decline {
+    border: none;
+    padding: 7px 12px 7px 0;
+    width: 120px;
+    height: 34px;
+font-family: "Red Hat Text", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fff;
+    box-sizing: border-box;
+    background-color: inherit;
+}
+
+.desk {
+    display: none;
+}
+
+@media screen and (min-width: 1439px) {
+    .cookie-popup {
+        padding: 20px 40px;
+        width: 1439px;
+        height: auto;
+    }
+
+    .popup-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cookie-class {
+        width: 1024px;
+        text-align: left;
+        font-size: 14px;
+        margin-top: 0;
+    }
+
+    .cookie-buttons {
+        margin-top: 0;
+    }
+
+    .desk {
+        display: block;
+    }
+}
