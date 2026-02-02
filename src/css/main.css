@@ -406,6 +406,8 @@ margin-bottom: 40px;
     }
     .reviews-container{
         position: relative;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
     .reviews-nav{
         position: absolute;
@@ -418,4 +420,20 @@ margin-bottom: 40px;
                 .slide-btn:hover .arrow {
                     fill: #073B2E;
                 }
+}
+/* SIMILAR GAMES */
+.similar-section{
+    background-image: url("/img/similar/mob.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+}
+.similar-title{
+  margin-bottom: 40px;
+}
+.similar-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    gap: 40px;
 }
