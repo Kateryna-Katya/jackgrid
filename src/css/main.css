@@ -129,7 +129,7 @@
 @media only screen and (min-width: 1440px) {
     .big-section{
      background-image: url("/img/bg/desk.png");
-    }
+      }
 }
 /* ABOUT GAME */
 .about-section{
@@ -400,6 +400,9 @@ margin-bottom: 40px;
     fill: #F7F7F8;
 }
 @media only screen and (min-width: 1440px) {
+    .reviews-section{
+        background: linear-gradient(180deg, rgba(4, 6, 14, 0) 0.96%, rgba(6, 9, 18, 0.8) 94.56%);
+    }
     .reviews-title{
      text-align: left;
      margin-bottom: 60px;
@@ -436,4 +439,52 @@ margin-bottom: 40px;
     justify-content: center;
     margin-top: 28px;
     gap: 40px;
+}
+@media only screen and (min-width: 1440px) {
+ .similar-section{
+    background-image: url("/img/similar/desk.png");
+height: 900px;
+ }
+ .similar-container{
+padding-top: 100px;
+padding-bottom: 100px;
+ }
+ .similar-title{
+    margin-bottom: 60px;
+ }
+/* щоб бокові слайди було видно */
+.similar-swiper {
+    overflow: visible;
+}
+
+/* картинка */
+.slide-img {
+    width: 100%;
+    border-radius: 24px;
+    display: block;
+}
+
+/* базовий стан ВСІХ слайдів */
+.slide-inner {
+    transform: scale(0.8) translateY(0);
+    opacity: 0.8;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* центральний */
+.swiper-slide-active .slide-inner {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+    z-index: 2;
+}
+
+/* лівий */
+.swiper-slide-prev .slide-inner {
+    transform: scale(0.7) translateY(80px);
+}
+
+/* правий */
+.swiper-slide-next .slide-inner {
+    transform: scale(0.7) translateY(-80px);
+}
 }

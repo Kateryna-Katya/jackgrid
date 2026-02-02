@@ -25,16 +25,20 @@ const reviewsSwiper = new Swiper('.reviews-swiper', {
 
 const similarSwiper = new Swiper('.similar-swiper', {
   slidesPerView: 1,
-  spaceBetween: 16,
+  spaceBetween: 24,
+  centeredSlides: true, // ⭐ ГОЛОВНЕ
   loop: true,
+
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,
   },
+
   navigation: {
     nextEl: '.similar-next',
     prevEl: '.similar-prev',
   },
+
   breakpoints: {
     1440: {
       slidesPerView: 3,
